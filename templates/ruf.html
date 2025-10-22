@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Django Page</title>
+  
+  <style>
+
+    * { 
+      margin: 0; 
+      padding: 0; 
+      box-sizing: border-box; 
+    }
+
+    body {
+      background-color: rgb(255, 124, 198);
+      font-family: Arial, sans-serif;
+    }
+
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    nav h1 {
+      color: white;
+      font-size: 28px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      font-size: 20px;
+      border: 2px solid white;
+      padding: 6px 14px;
+      border-radius: 6px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      background-color: white;
+      color: black;
+    }
+
+    .box1 {
+      height: 50vh;
+      color: white;
+      font-size: 35px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .but {
+      font-size: 25px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .but a {
+      text-decoration: none;
+      color: black;
+      border: 2px solid black;
+      padding: 9px 15px;
+      border-radius: 10px;
+      background-color: white;
+      transition: 0.3s;
+    }
+
+    .but a:hover {
+      background-color: black;
+      color: white;
+    }
+
+    .box2 {
+      height: 30vh;
+      color: black;
+      font-size: 25px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+  </style>
+</head>
+
+<body>
+  
+  <nav>
+    <h1>Django</h1>
+    <a href="http://127.0.0.1:8000/admin/login/?next=/admin/">Login</a>
+  </nav>
+
+  <div class="box1">
+    <h1 style="text-decoration: underline;">Welcome To Django Database</h1>
+  </div>
+
+  <div class="but">
+    <a href="http://127.0.0.1:8000/admin/">Login as admin</a>
+  </div>
+
+  <p class="box2">Your Server Started Successfully</p>
+
+</body>
+</html>
